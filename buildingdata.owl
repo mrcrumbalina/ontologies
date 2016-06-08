@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#"
+     xml:base="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:buildingdata="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:v1="http://purl.org/goodrelations/v1#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl">
+        <owl:imports rdf:resource="http://data.ordnancesurvey.co.uk/ontology/postcode/"/>
+        <owl:imports rdf:resource="http://purl.org/goodrelations/v1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasPrimaryHeatingSystem"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>hasBuilding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding2">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasSecondaryHeatingSystems"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>hasBuilding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding3">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasWaterHeatingSystem"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>hasBuilding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding4">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasShower"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>hasBuilding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding5">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasCooker"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label>hasBuilding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding6 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuilding6">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasRooms"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>hasBuilding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildingAgeCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildingAgeCategory">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildingForm -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildingForm">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings2"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildingType -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildingType">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings3"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings">
+        <rdfs:label>hasBuildings</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings2">
+        <rdfs:label>hasBuildings</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasBuildings3">
+        <rdfs:label>hasBuildings</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasCooker -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasCooker">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#CookingEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasLocation">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings1"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasMeasure">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings2"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasPostcodeDistrict -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasPostcodeDistrict">
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasPrimaryHeatingSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasPrimaryHeatingSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#SpaceHeatingEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings1">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+                    <rdf:Description rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#LocationReading"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings2">
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Measure"/>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasRooms -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasRooms">
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasSecondaryHeatingSystems -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasSecondaryHeatingSystems">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#SpaceHeatingEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasShower -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasShower">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ShowerEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasWaterHeatingSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasWaterHeatingSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#WaterHeatingEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasDateTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalReading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasOccupancy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasOccupancy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasPostcode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasPostcode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#BuildingAgeCategory -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#BuildingAgeCategory"/>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#BuildingForm -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#BuildingForm"/>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#BuildingType -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#BuildingType"/>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ClosedFire -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ClosedFire">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#SpaceHeatingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#CookingEquipment -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#CookingEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#DirectElectric -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#DirectElectric">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#SpaceHeatingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#DomesticBuilding -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#DomesticBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#DomesticDwelling -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#DomesticDwelling">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#BuildingType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ElectricCooker -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ElectricCooker">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#CookingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ElectricShower -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ElectricShower">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ShowerEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Equipment -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Equipment"/>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#EquipmentReading -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#EquipmentReading">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#GasAndElectricCooker -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#GasAndElectricCooker">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#CookingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#GasBoiler -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#GasBoiler">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#SpaceHeatingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#GasOrLPGCooker -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#GasOrLPGCooker">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#CookingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#HeatingEquipment -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#HeatingEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#LocationReading -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#LocationReading">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Measure -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Measure"/>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#PrimaryHeatingShower -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#PrimaryHeatingShower">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ShowerEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#PrimaryHeatingWater -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#PrimaryHeatingWater">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#WaterHeatingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomBathroom -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomBathroom">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Bathroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomBedroom -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomBedroom">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Bedroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomConservatory -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomConservatory">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Conservatory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomDining -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomDining">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Dining</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomKitchen -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomKitchen">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Kitchen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomLarder -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomLarder">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Larder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomLounge -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomLounge">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Lounge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomPassage -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomPassage">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Passage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomUtility -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#RoomUtility">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+        <rdfs:label>Utility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ShowerEquipment -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#ShowerEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#SpaceHeatingEquipment -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#SpaceHeatingEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#HeatingEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalEquipmentReading -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalEquipmentReading">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#EquipmentReading"/>
+                    <rdf:Description rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalReading"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalLocationReading -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalLocationReading">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#LocationReading"/>
+                    <rdf:Description rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalReading"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalReading -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#TemporalReading">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#WaterHeatingEquipment -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#WaterHeatingEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#HeatingEquipment"/>
+    </owl:Class>
+    
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
