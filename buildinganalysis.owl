@@ -161,6 +161,14 @@
     
 
 
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationExtrema -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationExtrema">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationInstant"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationInstant -->
 
     <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationInstant">
@@ -173,6 +181,22 @@
 
     <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationInterval">
         <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#Characterisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationMaxima -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationMaxima">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationInstant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationMinima -->
+
+    <owl:Class rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationMinima">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildinganalysis.owl#CharacterisationInstant"/>
     </owl:Class>
     
 
