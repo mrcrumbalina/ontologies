@@ -208,6 +208,7 @@
     <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasLocation -->
 
     <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasLocation">
+        <owl:inverseOf rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings"/>
         <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
         <rdfs:range>
             <owl:Class>
@@ -246,6 +247,22 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
         <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#SpaceHeatingEquipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings -->
+
+    <owl:ObjectProperty rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#hasReadings">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Building"/>
+                    <rdf:Description rdf:about="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Room"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.github.com/mrcrumbalina/ontologies/buildingdata.owl#Reading"/>
     </owl:ObjectProperty>
     
 
